@@ -1,0 +1,9 @@
+model,trials,complete,failed
+catboost,750,750,0
+elastic_net,750,750,0
+lightgbm,750,750,0
+logistic,0,0,0
+mlp,750,750,0
+random_forest,750,750,0
+tabpfn,0,0,0
+xgboost,750,750,0

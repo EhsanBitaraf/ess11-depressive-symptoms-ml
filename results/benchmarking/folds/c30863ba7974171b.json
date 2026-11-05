@@ -1,0 +1,10 @@
+{
+  "config": {
+    "inner_folds": 3,
+    "outer_folds": 5,
+    "repeats": 3,
+    "seed": 20261014
+  },
+  "identity": "c30863ba7974171b",
+  "sha256": "236c3a7a382d690913636d59d8f70515086e73fe3d43e77a9740f1891d6a6da7"
+}

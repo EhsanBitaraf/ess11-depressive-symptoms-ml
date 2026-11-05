@@ -1,0 +1,31 @@
+== OS ==
+Ubuntu 24.04.5 LTS
+7.0.0-28-generic
+== CPU ==
+CPU(s):                                  32
+Model name:                              Intel(R) Core(TM) i9-14900K
+Thread(s) per core:                      2
+Core(s) per socket:                      24
+Socket(s):                               1
+CPU(s) scaling MHz:                      42%
+CPU max MHz:                             6000.0000
+CPU min MHz:                             800.0000
+L3 cache:                                36 MiB (1 instance)
+== RAM ==
+               total        used        free      shared  buff/cache   available
+Mem:            31Gi        21Gi       2.2Gi       2.3Gi       8.1Gi       9.9Gi
+Swap:           35Gi        17Gi        18Gi
+== Swap ==
+NAME      TYPE SIZE  USED PRIO
+/swap.img file  36G 17.8G   -1
+== Disk (repo) ==
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p2  915G  306G  563G  36% /
+== GPU (PCI) ==
+00:02.0 VGA compatible controller: Intel Corporation Raptor Lake-S GT1 [UHD Graphics 770] (rev 04)
+== NVIDIA ==
+nvidia-smi not available
+== Python / torch ==
+python 3.12.3 | os.cpu_count: 32
+torch 2.14.1+cpu | cuda available: False | threads: 24
+tabpfn 9.2.0

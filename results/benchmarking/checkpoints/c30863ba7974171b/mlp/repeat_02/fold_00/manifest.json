@@ -1,0 +1,16 @@
+{
+  "actual_train_rows": 38593,
+  "best_params": {
+    "alpha": 0.04804439139211464,
+    "lr": 0.0005379248092385278,
+    "width": 64
+  },
+  "identity": "c30863ba7974171b",
+  "model": "mlp",
+  "n_test": 9649,
+  "outer_fold": 0,
+  "prediction_sha256": "853b8f982ae2830c17032f0de4ba843b389ba6bddb0eb47cd2f2a79b0783e470",
+  "repeat": 2,
+  "state": "COMPLETE",
+  "trained_rows": 38593
+}

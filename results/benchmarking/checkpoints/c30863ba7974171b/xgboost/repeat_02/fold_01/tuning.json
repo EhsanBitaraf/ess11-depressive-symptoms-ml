@@ -1,0 +1,560 @@
+{
+  "best_params": {
+    "learning_rate": 0.015024209239041991,
+    "max_depth": 7,
+    "n_estimators": 650,
+    "subsample": 0.7022534935973406
+  },
+  "trials": [
+    {
+      "number": 0,
+      "params": {
+        "learning_rate": 0.1355747274691335,
+        "max_depth": 7,
+        "n_estimators": 150,
+        "subsample": 0.6719080650795926
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41616466641426086
+    },
+    {
+      "number": 1,
+      "params": {
+        "learning_rate": 0.1195033160130065,
+        "max_depth": 6,
+        "n_estimators": 200,
+        "subsample": 0.7183805351026492
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40942193071047467
+    },
+    {
+      "number": 2,
+      "params": {
+        "learning_rate": 0.06818452751166802,
+        "max_depth": 2,
+        "n_estimators": 550,
+        "subsample": 0.7307281514756354
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39949875076611835
+    },
+    {
+      "number": 3,
+      "params": {
+        "learning_rate": 0.025321002544514224,
+        "max_depth": 5,
+        "n_estimators": 450,
+        "subsample": 0.7935585668343379
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3976032038529714
+    },
+    {
+      "number": 4,
+      "params": {
+        "learning_rate": 0.05650843987211663,
+        "max_depth": 4,
+        "n_estimators": 350,
+        "subsample": 0.8972344283995003
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39835501710573834
+    },
+    {
+      "number": 5,
+      "params": {
+        "learning_rate": 0.020448616721219233,
+        "max_depth": 6,
+        "n_estimators": 600,
+        "subsample": 0.9613390569504165
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3971596558888753
+    },
+    {
+      "number": 6,
+      "params": {
+        "learning_rate": 0.12748719756536406,
+        "max_depth": 7,
+        "n_estimators": 200,
+        "subsample": 0.6771435511326861
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42081764340400696
+    },
+    {
+      "number": 7,
+      "params": {
+        "learning_rate": 0.07857302799806538,
+        "max_depth": 2,
+        "n_estimators": 300,
+        "subsample": 0.8678471305677253
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4012851119041443
+    },
+    {
+      "number": 8,
+      "params": {
+        "learning_rate": 0.023466588169939528,
+        "max_depth": 8,
+        "n_estimators": 200,
+        "subsample": 0.850214261739282
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39936665693918866
+    },
+    {
+      "number": 9,
+      "params": {
+        "learning_rate": 0.04969199539248497,
+        "max_depth": 8,
+        "n_estimators": 150,
+        "subsample": 0.7649057067766868
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3994814455509186
+    },
+    {
+      "number": 10,
+      "params": {
+        "learning_rate": 0.015525726882528694,
+        "max_depth": 7,
+        "n_estimators": 450,
+        "subsample": 0.9488092514342412
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39738787213961285
+    },
+    {
+      "number": 11,
+      "params": {
+        "learning_rate": 0.024248528916696415,
+        "max_depth": 6,
+        "n_estimators": 500,
+        "subsample": 0.9912985548433684
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39870912830034894
+    },
+    {
+      "number": 12,
+      "params": {
+        "learning_rate": 0.01975606444654166,
+        "max_depth": 8,
+        "n_estimators": 650,
+        "subsample": 0.9283173608112254
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3991893529891968
+    },
+    {
+      "number": 13,
+      "params": {
+        "learning_rate": 0.04110789784873532,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.9722235466898868
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40758319695790607
+    },
+    {
+      "number": 14,
+      "params": {
+        "learning_rate": 0.015899229627784044,
+        "max_depth": 5,
+        "n_estimators": 250,
+        "subsample": 0.9693520393865845
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40732815861701965
+    },
+    {
+      "number": 15,
+      "params": {
+        "learning_rate": 0.05137806415356768,
+        "max_depth": 4,
+        "n_estimators": 650,
+        "subsample": 0.9444281367676218
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3994884490966797
+    },
+    {
+      "number": 16,
+      "params": {
+        "learning_rate": 0.03759930467529802,
+        "max_depth": 7,
+        "n_estimators": 450,
+        "subsample": 0.9641144194674416
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4002838432788849
+    },
+    {
+      "number": 17,
+      "params": {
+        "learning_rate": 0.03079930257261774,
+        "max_depth": 6,
+        "n_estimators": 600,
+        "subsample": 0.8683694618767673
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3978429635365804
+    },
+    {
+      "number": 18,
+      "params": {
+        "learning_rate": 0.033791753158643426,
+        "max_depth": 8,
+        "n_estimators": 400,
+        "subsample": 0.8742674506675104
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40016430616378784
+    },
+    {
+      "number": 19,
+      "params": {
+        "learning_rate": 0.02245833181310159,
+        "max_depth": 5,
+        "n_estimators": 650,
+        "subsample": 0.9138552167245184
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3971518675486247
+    },
+    {
+      "number": 20,
+      "params": {
+        "learning_rate": 0.019247677900634176,
+        "max_depth": 4,
+        "n_estimators": 550,
+        "subsample": 0.967409471867116
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3995896677176158
+    },
+    {
+      "number": 21,
+      "params": {
+        "learning_rate": 0.023430858262094997,
+        "max_depth": 4,
+        "n_estimators": 650,
+        "subsample": 0.8997162969388646
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39804603656133014
+    },
+    {
+      "number": 22,
+      "params": {
+        "learning_rate": 0.01718185533192476,
+        "max_depth": 6,
+        "n_estimators": 550,
+        "subsample": 0.907195588099891
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39691583315531415
+    },
+    {
+      "number": 23,
+      "params": {
+        "learning_rate": 0.01596910659419142,
+        "max_depth": 6,
+        "n_estimators": 550,
+        "subsample": 0.9700746952398956
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39743093649546307
+    },
+    {
+      "number": 24,
+      "params": {
+        "learning_rate": 0.0184802877420111,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.8224753979448857
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3964700798193614
+    },
+    {
+      "number": 25,
+      "params": {
+        "learning_rate": 0.022425811185411905,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.8017887320835307
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3976868490378062
+    },
+    {
+      "number": 26,
+      "params": {
+        "learning_rate": 0.016795110361140283,
+        "max_depth": 7,
+        "n_estimators": 450,
+        "subsample": 0.8844265887453585
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39687703053156537
+    },
+    {
+      "number": 27,
+      "params": {
+        "learning_rate": 0.01543606276399598,
+        "max_depth": 7,
+        "n_estimators": 500,
+        "subsample": 0.8921548739363666
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3969039221604665
+    },
+    {
+      "number": 28,
+      "params": {
+        "learning_rate": 0.015209344065158724,
+        "max_depth": 7,
+        "n_estimators": 550,
+        "subsample": 0.8493841595073873
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3962180515130361
+    },
+    {
+      "number": 29,
+      "params": {
+        "learning_rate": 0.01691957498391039,
+        "max_depth": 6,
+        "n_estimators": 400,
+        "subsample": 0.835040561076699
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3979218701521556
+    },
+    {
+      "number": 30,
+      "params": {
+        "learning_rate": 0.022846073650235166,
+        "max_depth": 8,
+        "n_estimators": 450,
+        "subsample": 0.8297012076730367
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3977463940779368
+    },
+    {
+      "number": 31,
+      "params": {
+        "learning_rate": 0.01660539036128322,
+        "max_depth": 7,
+        "n_estimators": 600,
+        "subsample": 0.8666857973918951
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.396234671274821
+    },
+    {
+      "number": 32,
+      "params": {
+        "learning_rate": 0.017488742134551052,
+        "max_depth": 7,
+        "n_estimators": 550,
+        "subsample": 0.7921544338359737
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3964422444502513
+    },
+    {
+      "number": 33,
+      "params": {
+        "learning_rate": 0.015319305120143761,
+        "max_depth": 6,
+        "n_estimators": 600,
+        "subsample": 0.8302363993806319
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3965925673643748
+    },
+    {
+      "number": 34,
+      "params": {
+        "learning_rate": 0.031200134289673553,
+        "max_depth": 7,
+        "n_estimators": 550,
+        "subsample": 0.8137851926331089
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40074775616327923
+    },
+    {
+      "number": 35,
+      "params": {
+        "learning_rate": 0.015168548590247431,
+        "max_depth": 7,
+        "n_estimators": 600,
+        "subsample": 0.7632194305248834
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3958721359570821
+    },
+    {
+      "number": 36,
+      "params": {
+        "learning_rate": 0.0177731396346222,
+        "max_depth": 7,
+        "n_estimators": 550,
+        "subsample": 0.7853095107795357
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3963931103547414
+    },
+    {
+      "number": 37,
+      "params": {
+        "learning_rate": 0.030310358239178103,
+        "max_depth": 7,
+        "n_estimators": 600,
+        "subsample": 0.7383683020343812
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.400681992371877
+    },
+    {
+      "number": 38,
+      "params": {
+        "learning_rate": 0.015551478532515574,
+        "max_depth": 8,
+        "n_estimators": 600,
+        "subsample": 0.7332338362830795
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3965182304382324
+    },
+    {
+      "number": 39,
+      "params": {
+        "learning_rate": 0.01654338943004549,
+        "max_depth": 6,
+        "n_estimators": 550,
+        "subsample": 0.727242144556928
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3961242735385895
+    },
+    {
+      "number": 40,
+      "params": {
+        "learning_rate": 0.020209233854128116,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.6636688681569918
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39654703934987384
+    },
+    {
+      "number": 41,
+      "params": {
+        "learning_rate": 0.016053594355359375,
+        "max_depth": 8,
+        "n_estimators": 500,
+        "subsample": 0.742655636363377
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39595045646031696
+    },
+    {
+      "number": 42,
+      "params": {
+        "learning_rate": 0.0230485270436807,
+        "max_depth": 7,
+        "n_estimators": 600,
+        "subsample": 0.8572470966573514
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39699239532152814
+    },
+    {
+      "number": 43,
+      "params": {
+        "learning_rate": 0.015490318865584007,
+        "max_depth": 8,
+        "n_estimators": 450,
+        "subsample": 0.7255418727910804
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3962735931078593
+    },
+    {
+      "number": 44,
+      "params": {
+        "learning_rate": 0.015024209239041991,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.7022534935973406
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3955103059609731
+    },
+    {
+      "number": 45,
+      "params": {
+        "learning_rate": 0.015816359685227946,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.7026766523759246
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3959399362405141
+    },
+    {
+      "number": 46,
+      "params": {
+        "learning_rate": 0.015019564504262846,
+        "max_depth": 7,
+        "n_estimators": 550,
+        "subsample": 0.7055792337008339
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39572057127952576
+    },
+    {
+      "number": 47,
+      "params": {
+        "learning_rate": 0.01525402316336723,
+        "max_depth": 8,
+        "n_estimators": 600,
+        "subsample": 0.6594522477698735
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39632806181907654
+    },
+    {
+      "number": 48,
+      "params": {
+        "learning_rate": 0.016019324852524875,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.7060577299121397
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39584877093633014
+    },
+    {
+      "number": 49,
+      "params": {
+        "learning_rate": 0.02078644266370124,
+        "max_depth": 7,
+        "n_estimators": 650,
+        "subsample": 0.7084337512948962
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39692819118499756
+    }
+  ]
+}

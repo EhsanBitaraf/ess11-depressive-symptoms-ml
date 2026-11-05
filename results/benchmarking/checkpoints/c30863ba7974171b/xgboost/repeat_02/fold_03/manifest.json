@@ -1,0 +1,17 @@
+{
+  "actual_train_rows": 38594,
+  "best_params": {
+    "learning_rate": 0.018890174971995074,
+    "max_depth": 7,
+    "n_estimators": 600,
+    "subsample": 0.7455659937047012
+  },
+  "identity": "c30863ba7974171b",
+  "model": "xgboost",
+  "n_test": 9648,
+  "outer_fold": 3,
+  "prediction_sha256": "aa154b151ded8877733be5dc1da676ddc560dcd31fa481e5abe982edb3ffec2c",
+  "repeat": 2,
+  "state": "COMPLETE",
+  "trained_rows": 38594
+}

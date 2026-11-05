@@ -1,0 +1,11 @@
+# Store and check out every text file with LF line endings on every operating
+# system. Recorded SHA-256 hashes (run identity, TabPFN manifests, variable map)
+# were computed on LF files and only match with LF line endings.
+* text=auto eol=lf
+
+# Binary files: never touch
+*.parquet binary
+*.png binary
+*.pdf binary
+*.sav binary
+*.safetensors binary

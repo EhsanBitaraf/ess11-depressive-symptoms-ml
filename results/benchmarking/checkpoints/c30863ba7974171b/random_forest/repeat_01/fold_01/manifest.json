@@ -1,0 +1,16 @@
+{
+  "actual_train_rows": 38593,
+  "best_params": {
+    "max_depth": 24,
+    "min_samples_leaf": 2,
+    "n_estimators": 450
+  },
+  "identity": "c30863ba7974171b",
+  "model": "random_forest",
+  "n_test": 9649,
+  "outer_fold": 1,
+  "prediction_sha256": "45ef52f17027da0435ea72adc703f24ca6f70a82addc7ce0bd80a31ef811411a",
+  "repeat": 1,
+  "state": "COMPLETE",
+  "trained_rows": 38593
+}

@@ -1,0 +1,5 @@
+hypothesis,model,criterion,value,lower,upper,supported
+H1,mlp,lowest AUROC lower 95% limit >= 0.75,0.7981138845085397,0.7981138845085397,,True
+H2,xgboost,"paired difference vs elastic net within (0, 0.03)",0.0119135666156956,0.00942950630029,0.0143573540422013,True
+H2,catboost,"paired difference vs elastic net within (0, 0.03)",0.0110744834351368,0.0088934785915625,0.0132215319101125,True
+H2,lightgbm,"paired difference vs elastic net within (0, 0.03)",0.0100049431108879,0.0075949465452988,0.0123811863023425,True

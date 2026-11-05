@@ -1,0 +1,58 @@
+rule,variable,n_all,n_eligible,description
+outcome,d_cesd8_score,881,836,Score prorated (one item missing)
+implausible,hhmmb,7,7,Household size 0 (respondent always counts) -> missing
+nonordinal_code,eisced,173,150,ES-ISCED 0 or 55 -> missing
+nonordinal_code,eiscedf,233,221,ES-ISCED 0 or 55 -> missing
+nonordinal_code,eiscedm,101,98,ES-ISCED 0 or 55 -> missing
+implausible,dosprt,0,0,Days of physical activity outside 0-7 -> missing
+R1,alcwkdy,0,0,alcfreq = 7 with reported grams -> 0 grams
+R2,alcwkdy,136,117,"alcfreq nonresponse, grams reported -> kept"
+structural,alcwkdy,15683,14698,"alcfreq = 7, not asked -> 0 grams"
+missing,alcwkdy,1122,1028,Nonresponse or not applicable outside never-drinkers -> missing
+R1,alcwknd,1,1,alcfreq = 7 with reported grams -> 0 grams
+R2,alcwknd,130,113,"alcfreq nonresponse, grams reported -> kept"
+structural,alcwknd,15682,14697,"alcfreq = 7, not asked -> 0 grams"
+missing,alcwknd,1140,1029,Nonresponse or not applicable outside never-drinkers -> missing
+structural,alcbnge,15683,14698,"alcfreq = 7, not asked -> 5 (never)"
+R1,alcbnge,0,0,alcfreq = 7 with binge frequency reported -> 5 (never)
+R2,alcbnge,207,183,"alcfreq nonresponse, binge answered -> kept"
+R1,hlpfmhr,3,3,hlpfmly = 2 with hours reported -> 0 hours
+structural,hlpfmhr,34397,33102,"hlpfmly = 2, not asked -> 0 hours"
+R2,hlpfmhr,0,0,"hlpfmly nonresponse, hours reported -> kept"
+R3,hltpr,4,4,Group conflict (flag/none/not-applicable with marked item) -> group missing
+flag,hltpr,826,696,Nonresponse flag -> group missing
+R3,pacc,4,3,Group conflict (flag/none/not-applicable with marked item) -> group missing
+flag,pacc,982,839,Nonresponse flag -> group missing
+R3,jbexp,29,24,Group conflict (flag/none/not-applicable with marked item) -> group missing
+flag,jbexp,407,356,Nonresponse flag -> group missing
+not_applicable,jbexp,4937,4018,Not-applicable flag -> items missing
+R3,jbexe,7,7,Group conflict (flag/none/not-applicable with marked item) -> group missing
+flag,jbexe,450,396,Nonresponse flag -> group missing
+not_applicable,jbexe,4937,4018,Not-applicable flag -> items missing
+R3,trhlt,40,39,Group conflict (flag/none/not-applicable with marked item) -> group missing
+flag,trhlt,633,551,Nonresponse flag -> group missing
+R3,dshlt,11,11,Group conflict (flag/none/not-applicable with marked item) -> group missing
+flag,dshlt,303,246,Nonresponse flag -> group missing
+R3,medtr,1,1,Group conflict (flag/none/not-applicable with marked item) -> group missing
+flag,medtr,119,103,Nonresponse flag -> group missing
+not_applicable,medtr,42567,40927,Not-applicable flag -> items missing
+R3,d_never_worked,35,30,Occupational-exposure conflict -> derived from emplrel
+flag,d_never_worked,607,542,Exposure nonresponse -> derived from emplrel
+check,d_never_worked,5,5,"Disagreement with emplrel (reported, not changed)"
+R1,d_covid_status,7,7,"symtc19 = 2 with symtnc19 answered -> infected, no persistent symptoms"
+R1,d_covid_status,5,5,respc19a = 3 with symtc19 answered -> not infected
+R2,d_covid_status,1,1,"respc19a nonresponse, symptom chain answered -> derived from chain"
+R1,d_cancer_status,1,1,hltprca 1 or 3 with duration reported -> filter governs
+R2,d_cancer_status,0,0,"hltprca nonresponse, duration reported -> previous cancer"
+missing,d_cancer_status,347,320,"Previous cancer, duration unknown -> missing"
+R1,d_hc_access,6,6,medtrun = 1 with medtrnu answered -> derived from reasons
+missing,d_hc_access,111,98,Unmet need without valid reason -> missing
+R1,d_hc_access,0,0,medtrun = 2 with reasons marked -> derived from medtrnu
+R2,d_hc_access,110,95,"medtrun nonresponse, dependent answered -> kept"
+check,d_lives_with_children,344,263,Household size unknown or 0 and no child listed -> missing
+check,d_lives_with_children,0,0,"Needed grid position absent or empty (positions in file: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15]; absent: [])"
+missing,d_lives_with_children,562,438,"Household grid incomplete, no child listed -> missing"
+check,d_ever_children,0,0,Grid lists no child but chldhhe not applicable -> missing
+implausible,height,2,2,Height outside 120-220 cm -> missing
+implausible,weighta,0,0,Weight outside 30-250 kg -> missing
+implausible,d_bmi,0,0,BMI outside 12-70 -> missing

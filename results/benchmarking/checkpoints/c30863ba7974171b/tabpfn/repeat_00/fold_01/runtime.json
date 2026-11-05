@@ -1,0 +1,15 @@
+{
+  "actual_train_rows": 10000,
+  "aggregate_fit_rows": 40000,
+  "encoded_features": 144,
+  "ensemble_members": 4,
+  "final_fit_predict_seconds": 6323.971877414995,
+  "strategy": "B_subsample_ensemble",
+  "subset_seeds": [
+    20261114,
+    20261115,
+    20261116,
+    20261117
+  ],
+  "wall_seconds": 6323.998297566999
+}

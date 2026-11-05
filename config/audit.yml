@@ -1,0 +1,24 @@
+protocol_version: "0.5"
+data_edition: "ESS11 edition 4.2"
+source_file: "data/ESS11e04_2.sav"
+output_dir: "results/audit"
+primary_cutoff: 9
+sensitivity_cutoffs: [8, 10]
+country_min_eligible: 500
+country_min_cases: 100
+country_min_controls: 100
+precision_halfwidth_warning: 0.07
+age_min: 18
+# This manifest is intentionally incomplete until verified against official ESS11 codebook.
+# Missing codes MUST NOT be inferred from numeric values alone.
+variable_map: "config/variable_map.csv"
+# Survey weight and design fields
+columns:
+  country: cntry
+  respondent: idno
+  age: agea
+  sex: gndr
+  weight_post: pspwght
+  weight_analysis: anweight
+  psu: psu
+  stratum: stratum

@@ -1,0 +1,65 @@
+# ESS11 Stage-0 manual audit acceptance register.
+# Evidence references do not constitute automatic Gate approval; each entry below
+# is a human attestation by the responsible person.
+# Names under items must match audit_summary.json -> gate_evidence -> checks.
+# Decisions D33-D38 are recorded in the Study Design Decisions Log (approved by
+# PI on 2026-10-14) and will be incorporated in protocol version 0.6.
+# Reference run: audit_summary.json timestamp 2026-10-14T10:21:10Z;
+# raw ESS11 SHA-256 35809b1883495d8e1cb3ed604f56c2ddf80c2666e9be11332a7d3502d3d631ae.
+items:
+  'Domain-design inference validated on eligibility-created singletons':
+    decision: 'approved'
+    date: '2026-10-14'
+    responsible: 'Maryam Jafarpoor (PI)'
+    evidence: >-
+      Automatic check PASS (audit_summary.json, gate_evidence.domain_bootstrap_reference).
+      No singleton strata in the source design; 24 strata with one eligible PSU
+      (BE, FI, FR, HU, IS, PL) arise only from eligibility filtering. Rao-Wu replicate
+      weights built on the full source design, then restricted to eligible respondents:
+      Python SE 0.00929 vs R survey subset() 0.0091 for FI (relative difference 2.1%).
+      Method recorded as decision D34.
+
+  'Independent R Rao-Wu variance reference':
+    decision: 'approved'
+    date: '2026-10-14'
+    responsible: 'Maryam Jafarpoor (PI)'
+    evidence: >-
+      Automatic check PASS (gate_evidence.bootstrap_reference), AT, 1,000 replicates:
+      Python vs R subbootstrap SE relative difference 3.1% (age) and 1.7% (EDS9);
+      Taylor linearisation difference 0.8% and 1.7%; tolerance 10%.
+
+  'Synthetic hardware and API feasibility verified':
+    decision: 'approved'
+    date: '2026-10-14'
+    responsible: 'Maryam Jafarpoor (PI)'
+    evidence: >-
+      Automatic check PASS (gate_evidence.technical_feasibility): synthetic TabPFN 9.2.0
+      CPU fit and predict succeeded (1.13 s; 48 training, 16 test rows, 6 features).
+      TabPFN fit has no sample_weight argument, so TabPFN is excluded from weighted-training
+      sensitivity analyses (SA2, SB4). Limitation: this is not full-scale feasibility for
+      48,242 eligible respondents; sample-size limits, timing and memory are settled under
+      D16 and the pilot run of 01_model_benchmarking.qmd.
+
+  'Appendix C routing validated':
+    decision: 'approved'
+    date: '2026-10-14'
+    responsible: 'Maryam Jafarpoor (PI)'
+    evidence: >-
+      routing_checks.csv (29 rule diagnostics, 119 flags) and results/preprocessing/
+      recode_log.csv and crosstabs/. Routing policy R1-R3 approved as decision D33:
+      R1 = 23, R2 = 584, R3 = 96 conflicts in seven multi-response groups (the separate
+      35 R3-labelled d_never_worked records are a downstream derivation, so the summary
+      total is 131). Related decisions D35-D38 recorded in the Decisions Log.
+
+  'Routed predictor recoding independently verified':
+    decision: 'approved'
+    date: '2026-10-14'
+    responsible: 'Maryam Jafarpoor (PI)'
+    evidence: >-
+      Automatic check PASS (gate_evidence.preprocessing_reference): audit and stage-1
+      preprocessing agree on raw-file SHA-256, per-rule R1 (9 rows), R3 in seven groups,
+      alcohol R2 (136 / 130 / 207) and summary totals. Evidence:
+      results/preprocessing/preprocess_summary.json and recode_log.csv; household grid:
+      no needed position absent; d_lives_with_children missing 562 (438 eligible), of which
+      7 are new because hhmmb = 0. Variable-map SHA-256 and sample-size comparisons are
+      added in audit.py and must also PASS in the confirming run.

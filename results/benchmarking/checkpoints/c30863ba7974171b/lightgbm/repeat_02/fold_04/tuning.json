@@ -1,0 +1,509 @@
+{
+  "best_params": {
+    "learning_rate": 0.01676695689135426,
+    "n_estimators": 550,
+    "num_leaves": 57
+  },
+  "trials": [
+    {
+      "number": 0,
+      "params": {
+        "learning_rate": 0.02136287954543208,
+        "n_estimators": 150,
+        "num_leaves": 58
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4067081188714987
+    },
+    {
+      "number": 1,
+      "params": {
+        "learning_rate": 0.0704524751945747,
+        "n_estimators": 450,
+        "num_leaves": 32
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4055871482520803
+    },
+    {
+      "number": 2,
+      "params": {
+        "learning_rate": 0.015934422673354664,
+        "n_estimators": 250,
+        "num_leaves": 63
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40265025449874026
+    },
+    {
+      "number": 3,
+      "params": {
+        "learning_rate": 0.030195856715146026,
+        "n_estimators": 550,
+        "num_leaves": 54
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4013947702070028
+    },
+    {
+      "number": 4,
+      "params": {
+        "learning_rate": 0.06964775378843985,
+        "n_estimators": 250,
+        "num_leaves": 58
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4054281031533818
+    },
+    {
+      "number": 5,
+      "params": {
+        "learning_rate": 0.03765548387364472,
+        "n_estimators": 550,
+        "num_leaves": 28
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4000796867277898
+    },
+    {
+      "number": 6,
+      "params": {
+        "learning_rate": 0.10602357111851153,
+        "n_estimators": 200,
+        "num_leaves": 43
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4069641868215643
+    },
+    {
+      "number": 7,
+      "params": {
+        "learning_rate": 0.027528684574625505,
+        "n_estimators": 150,
+        "num_leaves": 44
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4031910625837917
+    },
+    {
+      "number": 8,
+      "params": {
+        "learning_rate": 0.055573586413926845,
+        "n_estimators": 500,
+        "num_leaves": 33
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40324892877956825
+    },
+    {
+      "number": 9,
+      "params": {
+        "learning_rate": 0.15519524711738603,
+        "n_estimators": 500,
+        "num_leaves": 15
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41729794241360985
+    },
+    {
+      "number": 10,
+      "params": {
+        "learning_rate": 0.016486473889672434,
+        "n_estimators": 600,
+        "num_leaves": 24
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39954591877100115
+    },
+    {
+      "number": 11,
+      "params": {
+        "learning_rate": 0.022472917687224495,
+        "n_estimators": 600,
+        "num_leaves": 29
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3995588547460233
+    },
+    {
+      "number": 12,
+      "params": {
+        "learning_rate": 0.015406512432532379,
+        "n_estimators": 550,
+        "num_leaves": 27
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3995630657446503
+    },
+    {
+      "number": 13,
+      "params": {
+        "learning_rate": 0.02293514814938273,
+        "n_estimators": 650,
+        "num_leaves": 36
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4000158062483888
+    },
+    {
+      "number": 14,
+      "params": {
+        "learning_rate": 0.04956193394854762,
+        "n_estimators": 550,
+        "num_leaves": 15
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40062545695959734
+    },
+    {
+      "number": 15,
+      "params": {
+        "learning_rate": 0.021321390219626462,
+        "n_estimators": 650,
+        "num_leaves": 20
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39939928119090434
+    },
+    {
+      "number": 16,
+      "params": {
+        "learning_rate": 0.01603462180920687,
+        "n_estimators": 650,
+        "num_leaves": 15
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40038906079243297
+    },
+    {
+      "number": 17,
+      "params": {
+        "learning_rate": 0.023164807963353448,
+        "n_estimators": 500,
+        "num_leaves": 22
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3995309154196438
+    },
+    {
+      "number": 18,
+      "params": {
+        "learning_rate": 0.026607619982153694,
+        "n_estimators": 400,
+        "num_leaves": 18
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3999714848284229
+    },
+    {
+      "number": 19,
+      "params": {
+        "learning_rate": 0.018278353829903116,
+        "n_estimators": 450,
+        "num_leaves": 40
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3994678790437603
+    },
+    {
+      "number": 20,
+      "params": {
+        "learning_rate": 0.019433553641688767,
+        "n_estimators": 400,
+        "num_leaves": 47
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39942768828476555
+    },
+    {
+      "number": 21,
+      "params": {
+        "learning_rate": 0.0205001315322823,
+        "n_estimators": 450,
+        "num_leaves": 41
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3993857156758634
+    },
+    {
+      "number": 22,
+      "params": {
+        "learning_rate": 0.027859628394525788,
+        "n_estimators": 350,
+        "num_leaves": 40
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3997043319126879
+    },
+    {
+      "number": 23,
+      "params": {
+        "learning_rate": 0.030967958124714912,
+        "n_estimators": 350,
+        "num_leaves": 56
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3993403030127385
+    },
+    {
+      "number": 24,
+      "params": {
+        "learning_rate": 0.030080373245802542,
+        "n_estimators": 650,
+        "num_leaves": 19
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3993760060277771
+    },
+    {
+      "number": 25,
+      "params": {
+        "learning_rate": 0.029100223958495923,
+        "n_estimators": 450,
+        "num_leaves": 52
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40055339723927236
+    },
+    {
+      "number": 26,
+      "params": {
+        "learning_rate": 0.016439615428521844,
+        "n_estimators": 650,
+        "num_leaves": 47
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3992722045328437
+    },
+    {
+      "number": 27,
+      "params": {
+        "learning_rate": 0.03485338646792641,
+        "n_estimators": 150,
+        "num_leaves": 53
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4009510076132299
+    },
+    {
+      "number": 28,
+      "params": {
+        "learning_rate": 0.01916141407494721,
+        "n_estimators": 650,
+        "num_leaves": 61
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4002305464703597
+    },
+    {
+      "number": 29,
+      "params": {
+        "learning_rate": 0.015903674248464394,
+        "n_estimators": 650,
+        "num_leaves": 44
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39908280436429994
+    },
+    {
+      "number": 30,
+      "params": {
+        "learning_rate": 0.015675033341710793,
+        "n_estimators": 650,
+        "num_leaves": 43
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39912020191873504
+    },
+    {
+      "number": 31,
+      "params": {
+        "learning_rate": 0.015058207335422957,
+        "n_estimators": 650,
+        "num_leaves": 41
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39970052893267605
+    },
+    {
+      "number": 32,
+      "params": {
+        "learning_rate": 0.01618348293067749,
+        "n_estimators": 650,
+        "num_leaves": 52
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3992847609742318
+    },
+    {
+      "number": 33,
+      "params": {
+        "learning_rate": 0.016443214997301867,
+        "n_estimators": 650,
+        "num_leaves": 47
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3990913486243397
+    },
+    {
+      "number": 34,
+      "params": {
+        "learning_rate": 0.023603593775288288,
+        "n_estimators": 650,
+        "num_leaves": 51
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4009262966174883
+    },
+    {
+      "number": 35,
+      "params": {
+        "learning_rate": 0.01532455084101471,
+        "n_estimators": 550,
+        "num_leaves": 51
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3991671176681247
+    },
+    {
+      "number": 36,
+      "params": {
+        "learning_rate": 0.032891036089261354,
+        "n_estimators": 650,
+        "num_leaves": 38
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4016997212356703
+    },
+    {
+      "number": 37,
+      "params": {
+        "learning_rate": 0.01676695689135426,
+        "n_estimators": 550,
+        "num_leaves": 57
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39883397564493306
+    },
+    {
+      "number": 38,
+      "params": {
+        "learning_rate": 0.023919492858017543,
+        "n_estimators": 550,
+        "num_leaves": 44
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40028053043800255
+    },
+    {
+      "number": 39,
+      "params": {
+        "learning_rate": 0.02101377484190829,
+        "n_estimators": 550,
+        "num_leaves": 59
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3998846487746654
+    },
+    {
+      "number": 40,
+      "params": {
+        "learning_rate": 0.016648820804201332,
+        "n_estimators": 550,
+        "num_leaves": 60
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3993186351434623
+    },
+    {
+      "number": 41,
+      "params": {
+        "learning_rate": 0.03189844659663043,
+        "n_estimators": 650,
+        "num_leaves": 50
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.40308207894332987
+    },
+    {
+      "number": 42,
+      "params": {
+        "learning_rate": 0.016460609136447424,
+        "n_estimators": 500,
+        "num_leaves": 54
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39891717495585644
+    },
+    {
+      "number": 43,
+      "params": {
+        "learning_rate": 0.024339800017445765,
+        "n_estimators": 400,
+        "num_leaves": 59
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.399623032379066
+    },
+    {
+      "number": 44,
+      "params": {
+        "learning_rate": 0.01994113262738996,
+        "n_estimators": 600,
+        "num_leaves": 47
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39983611308503186
+    },
+    {
+      "number": 45,
+      "params": {
+        "learning_rate": 0.01861704136180707,
+        "n_estimators": 400,
+        "num_leaves": 52
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3992405015214591
+    },
+    {
+      "number": 46,
+      "params": {
+        "learning_rate": 0.016598138917786064,
+        "n_estimators": 450,
+        "num_leaves": 50
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3991769973265473
+    },
+    {
+      "number": 47,
+      "params": {
+        "learning_rate": 0.01820807398413684,
+        "n_estimators": 600,
+        "num_leaves": 37
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3995075591977509
+    },
+    {
+      "number": 48,
+      "params": {
+        "learning_rate": 0.018336485943039767,
+        "n_estimators": 500,
+        "num_leaves": 56
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.39901041169232254
+    },
+    {
+      "number": 49,
+      "params": {
+        "learning_rate": 0.015349009110861586,
+        "n_estimators": 550,
+        "num_leaves": 46
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.3993035186995033
+    }
+  ]
+}

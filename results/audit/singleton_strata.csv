@@ -1,0 +1,25 @@
+country,stratum,source_respondents,source_psu,eligible_respondents,eligible_psu,origin,action
+BE,132.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FI,375.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FI,423.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FI,489.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FI,525.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FI,537.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FI,544.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FI,575.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+FR,627.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+HU,776.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+HU,795.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+HU,822.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+HU,827.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+HU,866.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+HU,879.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+HU,882.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+IS,953.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+PL,1183.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+PL,1196.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+PL,1201.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+PL,1212.0,4,4,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+PL,1223.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+PL,1231.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically
+PL,1238.0,2,2,1,1,created_by_eligibility,REVIEW DESIGN; never merge strata automatically

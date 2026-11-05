@@ -1,0 +1,33 @@
+{
+  "benchmark_config_sha256": "8affe47da79a4c49139254245370faa7c19fc2cf8c5483de31ed703bea1dd355",
+  "d16_config_sha256": "bcb0f04614b8b39c0afaa7fe4235ffc7d8ea5cdcbd43dbbd07dbff7ae73b4bf7",
+  "data_hashes": {
+    "audit": "21014d9424f152f1295953184ec7631ace2dacdb6edfdd614c02a5be2a85e6ac",
+    "data": "14042340284177f4f8ca96e23074b01ba345efc3da06657aa8ff584a09eed21b",
+    "feature_spec": "f24be6c656b961e4d79cb64f9e7b849a90f74de9ce999bce8c211bc59163b684"
+  },
+  "encoded_features_max": 144,
+  "exit_code": 0,
+  "fit_seconds": 0.4295566761866212,
+  "frozen_folds_sha256": "236c3a7a382d690913636d59d8f70515086e73fe3d43e77a9740f1891d6a6da7",
+  "n_outer_test_not_read": 9649,
+  "n_outer_train": 38593,
+  "n_subsets": 1,
+  "note": "Feasibility only; no outer-test metric or prediction",
+  "outer_fold": 0,
+  "passed": true,
+  "peak_rss_gb": 10.4052,
+  "peak_swap_gb": 0.0,
+  "pilot_only": true,
+  "predict_seconds": 851.621315849945,
+  "proxy_rows": 9648,
+  "repeat": 0,
+  "resource_limit_exceeded": false,
+  "run_id": "c30863ba7974171b",
+  "strategy": "D_small_subsample",
+  "timed_out": false,
+  "torch_threads": 24,
+  "train_size_per_subset": 5000,
+  "wall_seconds": 852.1427538143471,
+  "wall_seconds_observed": 854.3178900117055
+}

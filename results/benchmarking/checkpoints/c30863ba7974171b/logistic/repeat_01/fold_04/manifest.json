@@ -1,0 +1,12 @@
+{
+  "actual_train_rows": 38594,
+  "best_params": {},
+  "identity": "c30863ba7974171b",
+  "model": "logistic",
+  "n_test": 9648,
+  "outer_fold": 4,
+  "prediction_sha256": "f10151d49a7a856d403d0646dc6cab135f30efbb85d3767b8f35f2fbcc2838f1",
+  "repeat": 1,
+  "state": "COMPLETE",
+  "trained_rows": 38594
+}

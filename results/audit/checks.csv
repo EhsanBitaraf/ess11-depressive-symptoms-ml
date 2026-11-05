@@ -1,0 +1,20 @@
+check,status,detail
+Required columns present,PASS,Absent: 
+Country + respondent ID unique,PASS,0 duplicate rows
+Country code present,PASS,Country missing=0
+CES-D8 valid codes,PASS,"{'fltdpr': 0, 'flteeff': 0, 'slprl': 0, 'wrhpp': 0, 'fltlnl': 0, 'enjlf': 0, 'fltsd': 0, 'cldgng': 0}"
+weight_post positive finite,PASS,0 invalid or absent
+weight_analysis positive finite,PASS,0 invalid or absent
+psu present,PASS,0 missing
+stratum present,PASS,0 missing
+Sex code valid for eligibility,PASS,Allowed substantive codes 1/2; 9 is nonresponse
+Nonempty eligible sample,PASS,48242 eligible
+Source sampling strata have >=2 PSUs,PASS,0 source singleton strata; 24 created only by eligibility; use domain estimation
+All mapped fields present,PASS,0 missing mapped fields
+Codebook-derived variable map loaded,PASS,"162 variables; schema: variable,label,role,group,missing_codes,note"
+All mapped variables have roles,PASS,0 variables have an empty role
+Appendix C routing validated,PASS,29 rule diagnostics; 119 potential contradictions; team signoff recorded
+Domain-design inference validated on eligibility-created singletons,PASS,Source-design Rao-Wu then domain subset agrees with R within 10%
+Independent R Rao-Wu variance reference,PASS,Python and independent R bootstrap SE differ <10%; Taylor proximity also <10%
+Synthetic hardware and API feasibility verified,PASS,Synthetic TabPFN CPU fit and prediction succeeded; full-scale feasibility not established
+Routed predictor recoding independently verified,PASS,"Independent preprocessing matches raw and variable-map SHA-256, records and eligible sample, per-rule R1/R3 and alcohol R2; summary totals verified"

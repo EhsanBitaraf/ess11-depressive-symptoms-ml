@@ -1,0 +1,178 @@
+---
+title: "Phase 00 — Data Audit and Technical Feasibility"
+subtitle: "ESS11 Elevated Depressive Symptoms | Pre-analysis audit"
+date: today
+jupyter: python3
+format:
+  html:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+---
+
+## Purpose and protocol boundaries
+
+This is the **pre-analysis audit** of the study protocol (version 0.5, 13 October 2026; the protocol itself is not part of this repository). It was completed and signed off before any model was trained. It is not evidence of predictive performance or readiness for clinical application. No machine-learning algorithm is selected, trained or evaluated here.
+
+Run `python scripts/run_audit.py --config config/audit.yml` from the repository root before rendering this report. The data file is not distributed with this repository. If it is unavailable, the report explicitly displays a **BLOCKED** state.
+
+```{python}
+#| label: audit-load
+import json
+from pathlib import Path
+import pandas as pd
+from IPython.display import display, Markdown
+path=Path('results/audit/audit_summary.json')
+if path.exists():
+    audit=json.loads(path.read_text(encoding='utf-8'))
+else:
+    audit={'status':'BLOCKED', 'issues':['Audit summary not produced. Run scripts/run_audit.py first.'], 'summary':{}, 'checks':[], 'countries':[], 'flow':[], 'variable_audit':[], 'outcome':{}, 'routing':[]}
+def show(items, limit=40):
+    if not items: display(Markdown('*No audited data available.*'))
+    else: display(pd.DataFrame(items).head(limit))
+status=audit.get('status','BLOCKED')
+display(Markdown(f'**Readiness status: {status}**'))
+```
+
+## 1. Data provenance and integrity
+
+The configured source should be the ESS11 integrated file, edition 4.2. SHA256 documents the local file bytes but does not independently verify the edition. Country-specific respondent identifiers are checked for duplicates and missingness.
+
+```{python}
+#| label: audit-integrity
+show([audit.get('metadata',{}),audit.get('summary',{})])
+show([x for x in audit.get('checks',[]) if 'Country' in x['check'] or 'Required' in x['check']])
+```
+
+## 2. Eligibility and participant flow
+
+The study's main sample consists of adults aged 18 years or older with a valid CES-D8 score, sex and weights. Main country threshold: at least **500 eligible people**. Country-level AUROC/LOCO threshold: at least **100 cases and 100 non-cases**; these thresholds do not guarantee precision. The audit does **not** silently exclude countries when presenting raw sample diagnostics.
+
+```{python}
+#| label: audit-flow
+show(audit.get('flow',[]))
+show(audit.get('countries',[]),100)
+```
+
+## 3. CES-D8 outcome validation
+
+Eight four-category items are recoded from 1–4 to 0–3, with `wrhpp` and `enjlf` reversed. Exactly one missing item is prorated from the seven observed responses; two or more missing items lead to an invalid score. The principal outcome is **CES-D8 ≥ 9**; threshold checks for 8 and 10 are descriptive and do not tune any predictive model. The audit flags ambiguous rounding if encountered.
+
+```{python}
+#| label: audit-outcome
+display(pd.json_normalize(audit.get('outcome',{}),sep=' / ') if audit.get('outcome') else pd.DataFrame())
+```
+
+## 4. Variable coverage and missingness
+
+The repository's `config/variable_map.csv` is a **researcher-created, codebook-derived manifest** with 162 ESS variables, their roles, predictor sets, variable-specific nonresponse and not-applicable codes, and routing rules. Numeric values `7`, `8`, `9`, etc. are **not** converted globally across all columns.
+
+```{python}
+#| label: audit-variable-map
+show(audit.get('variable_audit',[]),150)
+```
+
+## 5. Questionnaire routing and not-applicable values
+
+Raw cross-tabulations for filter/dependent pairs in Appendix C are saved within the audit summary **for local inspection only**. Not-applicable values are never converted to zero or substantive categories unless the underlying filter condition is confirmed against the ESS11 questionnaire and observed responses. The script now also produces `routing_checks.csv`, identifying potential routing contradictions, while retaining cross-tabulations in the local JSON file. Automated consistency is not equivalent to independently approving derived recodes.
+
+```{python}
+#| label: audit-routing
+show([{k:v for k,v in row.items() if k!='rows'} for row in audit.get('routing',[])])
+```
+
+```{python}
+#| label: routing-checks
+show(audit.get("routing_checks", []), 100)
+```
+
+## 6. Survey design and weights
+
+Country-level diagnostics include positive weight checks, `psu` and `stratum` presence, singleton strata, and Kish effective sample size. An independent Python Rao–Wu bootstrap implementation and an R `survey` reference runner are now included. Their numerical agreement is **not claimed until the actual R validation results are PASS**. Before inferential analysis, the team's Rao–Wu implementation must be compared with the R `survey` reference **on variance estimates**, and singleton-PSU handling must be documented without arbitrary stratum merging. Country AUROC precision flags are also pending a validated method. Singleton PSU diagnostics for both original and eligible samples are exported as `singleton_strata.csv`; this is intentionally a review report, not an arbitrary automatic stratum merger.
+
+```{python}
+#| label: audit-survey
+show([r for r in audit.get('checks',[]) if 'weight' in r['check'] or 'psu' in r['check'] or 'stratum' in r['check'] or 'bootstrap' in r['check']])
+```
+
+```{python}
+#| label: singleton-diagnostics
+show(audit.get("singleton_strata", []), 200)
+```
+
+## 7. Preprocessing leakage controls
+
+Constant plausibility limits may be applied before fold splitting. All data-dependent transformations, including median/mode imputation, scaling and the 99.9th percentile of alcohol consumption, must be fitted **inside training folds only** during modelling. This report performs no learned preprocessing and makes no claim to having verified a future model pipeline.
+
+## 8. Technical feasibility
+
+Synthetic-data runtime, memory, estimator-version checks, sample-weight support and TabPFN limits must be completed before primary model training. These checks must not involve comparing out-of-sample prediction accuracy. The current audit does not automatically certify installed model libraries or computational capacity.
+
+## 9. Readiness assessment and deviations
+
+**The audit is not an automatic authorisation to proceed.** A named investigator must review routing cross-tabs, missing-value metadata, codebook concordance, survey variance validation, country precision and synthetic runtime results, then record sign-off and any deviation from registered protocol. A missing dataset or failed required column check blocks the audit.
+
+```{python}
+#| label: audit-readiness
+issues=audit.get('issues',[])
+if issues:
+    display(Markdown('**Outstanding issues / manual review items**'))
+    for ix,msg in enumerate(issues,1):
+        display(Markdown(f'{ix}. {msg}'))
+else:
+    display(Markdown('No automatic check failures. **Manual sign-off remains required.**'))
+```
+
+## 10. Scope and reproducibility
+
+All code runs locally, and raw ESS11 responses and individual-level outputs stay under git-ignored `local/`. Public summaries require disclosure review. Execution metadata and dataset checksum are written to `results/audit/audit_summary.json`. Version 0.5 is retained under `docs/`. Refer to `README.md` for the exact commands and to `docs/phase1_scope.md` for remaining acceptance gates.
+
+## 11. Acceptance-gate evidence (same audit; no new research stage)
+
+All evidence below is created by the **existing** `python scripts/run_audit.py --config config/audit.yml` command. The only modified implementation file is `src/python/audit.py`; no new R script, CLI entry point, or configuration file is required. The comparison with R uses a temporary input that is deleted when complete.
+
+```{python}
+#| label: gate-evidence
+ge = audit.get('gate_evidence', {})
+show([{'gate': k, **v} for k,v in ge.get('checks',{}).items()])
+```
+
+### Questionnaire routing and recoding
+
+The following flags are **diagnostics**, not adjudicated errors. Confirm Appendix C against the questionnaire before asserting that the derived predictors are model-ready. No unverified not-applicable value is silently converted to zero.
+
+```{python}
+#| label: routing-acceptance
+show(ge.get('routing_review', []), 50)
+```
+
+### Singleton strata
+
+The protocol's deterministic fallback is *proposed* for the eligible-sample singletons. The modelling/bootstrap implementation must log and apply this rule; proposals here are not proof that it was applied.
+
+```{python}
+#| label: singleton-acceptance
+show(ge.get('singleton_policy', []), 40)
+```
+
+### Independent R reference
+
+When `Rscript` and the R packages `survey` and `jsonlite` are available, this audit compares 1,000 Python Rao–Wu rescaling replicates with the independent R `survey` subbootstrap and Taylor reference on an Austrian weighted age mean and CES-D8 elevated-symptom proportion. R/Python agreement is evaluated on **standard errors**, not identical resampled PSU draws. A reference pass does not certify all countries or the final paired model bootstrap.
+
+```{python}
+#| label: bootstrap-acceptance
+show([ge.get('bootstrap_reference', {})])
+```
+
+### Computational feasibility
+
+Versions and an inspection of the installed TabPFN `fit()` signature are recorded below. A real, measured synthetic-fit resource test and the selected training-data limit remain necessary for actual approval. Absence of `sample_weight` is not automatically a model exclusion: the unweighted-primary/weighted-sensitivity rule of the protocol applies.
+
+```{python}
+#| label: technical-acceptance
+show([ge.get('technical_feasibility', {})])
+```
+
+**Approval rule:** The code intentionally reports `REQUIRES_REVIEW` until routed recodes, singleton fallback, independent R reference and computational limits have **actual recorded evidence**. It must not change to `APPROVED` by merely setting a status string. The human decisions are recorded in `config/audit_signoff.yaml`.

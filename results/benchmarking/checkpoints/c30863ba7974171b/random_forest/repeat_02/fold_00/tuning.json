@@ -1,0 +1,509 @@
+{
+  "best_params": {
+    "max_depth": 22,
+    "min_samples_leaf": 2,
+    "n_estimators": 500
+  },
+  "trials": [
+    {
+      "number": 0,
+      "params": {
+        "max_depth": 4,
+        "min_samples_leaf": 2,
+        "n_estimators": 200
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4588252390278272
+    },
+    {
+      "number": 1,
+      "params": {
+        "max_depth": 19,
+        "min_samples_leaf": 3,
+        "n_estimators": 300
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4122862632005006
+    },
+    {
+      "number": 2,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41117938668335485
+    },
+    {
+      "number": 3,
+      "params": {
+        "max_depth": 18,
+        "min_samples_leaf": 3,
+        "n_estimators": 250
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41254773326308203
+    },
+    {
+      "number": 4,
+      "params": {
+        "max_depth": 15,
+        "min_samples_leaf": 1,
+        "n_estimators": 350
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41352487675288513
+    },
+    {
+      "number": 5,
+      "params": {
+        "max_depth": 10,
+        "min_samples_leaf": 7,
+        "n_estimators": 150
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4242491253644202
+    },
+    {
+      "number": 6,
+      "params": {
+        "max_depth": 5,
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4494560769859097
+    },
+    {
+      "number": 7,
+      "params": {
+        "max_depth": 9,
+        "min_samples_leaf": 12,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42760707683158894
+    },
+    {
+      "number": 8,
+      "params": {
+        "max_depth": 6,
+        "min_samples_leaf": 1,
+        "n_estimators": 250
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.44224669374278086
+    },
+    {
+      "number": 9,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 7,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4145143741000881
+    },
+    {
+      "number": 10,
+      "params": {
+        "max_depth": 19,
+        "min_samples_leaf": 15,
+        "n_estimators": 300
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4188907717170603
+    },
+    {
+      "number": 11,
+      "params": {
+        "max_depth": 21,
+        "min_samples_leaf": 5,
+        "n_estimators": 350
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4134600139301188
+    },
+    {
+      "number": 12,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 6,
+        "n_estimators": 250
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4141640348048488
+    },
+    {
+      "number": 13,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4126849090485065
+    },
+    {
+      "number": 14,
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 10,
+        "n_estimators": 300
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4201521706547577
+    },
+    {
+      "number": 15,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41142210518145017
+    },
+    {
+      "number": 16,
+      "params": {
+        "max_depth": 23,
+        "min_samples_leaf": 2,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41089263854912944
+    },
+    {
+      "number": 17,
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4179156419791275
+    },
+    {
+      "number": 18,
+      "params": {
+        "max_depth": 15,
+        "min_samples_leaf": 5,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41490391443566094
+    },
+    {
+      "number": 19,
+      "params": {
+        "max_depth": 23,
+        "min_samples_leaf": 5,
+        "n_estimators": 150
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4139608853592312
+    },
+    {
+      "number": 20,
+      "params": {
+        "max_depth": 18,
+        "min_samples_leaf": 7,
+        "n_estimators": 150
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4155121434233409
+    },
+    {
+      "number": 21,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4113088770995254
+    },
+    {
+      "number": 22,
+      "params": {
+        "max_depth": 21,
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4110882706796873
+    },
+    {
+      "number": 23,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.411871564246641
+    },
+    {
+      "number": 24,
+      "params": {
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4110691133147073
+    },
+    {
+      "number": 25,
+      "params": {
+        "max_depth": 20,
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.411452656790521
+    },
+    {
+      "number": 26,
+      "params": {
+        "max_depth": 19,
+        "min_samples_leaf": 7,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4147663141630507
+    },
+    {
+      "number": 27,
+      "params": {
+        "max_depth": 17,
+        "min_samples_leaf": 3,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.413032062275786
+    },
+    {
+      "number": 28,
+      "params": {
+        "max_depth": 13,
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4161702564600225
+    },
+    {
+      "number": 29,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 1,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41110516968948546
+    },
+    {
+      "number": 30,
+      "params": {
+        "max_depth": 17,
+        "min_samples_leaf": 8,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41543937230586697
+    },
+    {
+      "number": 31,
+      "params": {
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4110691133147073
+    },
+    {
+      "number": 32,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 4,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4123895393756263
+    },
+    {
+      "number": 33,
+      "params": {
+        "max_depth": 21,
+        "min_samples_leaf": 1,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4113505816427352
+    },
+    {
+      "number": 34,
+      "params": {
+        "max_depth": 17,
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4118425835952308
+    },
+    {
+      "number": 35,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 4,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4123940179789949
+    },
+    {
+      "number": 36,
+      "params": {
+        "max_depth": 18,
+        "min_samples_leaf": 1,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41175785220582034
+    },
+    {
+      "number": 37,
+      "params": {
+        "max_depth": 21,
+        "min_samples_leaf": 4,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.412504833657281
+    },
+    {
+      "number": 38,
+      "params": {
+        "max_depth": 16,
+        "min_samples_leaf": 3,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.413464824689093
+    },
+    {
+      "number": 39,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 3,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41207305254644017
+    },
+    {
+      "number": 40,
+      "params": {
+        "max_depth": 19,
+        "min_samples_leaf": 5,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4134502212317633
+    },
+    {
+      "number": 41,
+      "params": {
+        "max_depth": 19,
+        "min_samples_leaf": 1,
+        "n_estimators": 350
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41145321888459274
+    },
+    {
+      "number": 42,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 2,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4108232917783224
+    },
+    {
+      "number": 43,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 5,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.412963072202543
+    },
+    {
+      "number": 44,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 1,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41104747487829796
+    },
+    {
+      "number": 45,
+      "params": {
+        "max_depth": 23,
+        "min_samples_leaf": 2,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41089263854912944
+    },
+    {
+      "number": 46,
+      "params": {
+        "max_depth": 24,
+        "min_samples_leaf": 2,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.411177138791417
+    },
+    {
+      "number": 47,
+      "params": {
+        "max_depth": 20,
+        "min_samples_leaf": 3,
+        "n_estimators": 450
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4118323683341338
+    },
+    {
+      "number": 48,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 3,
+        "n_estimators": 500
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41171268748566314
+    },
+    {
+      "number": 49,
+      "params": {
+        "max_depth": 22,
+        "min_samples_leaf": 5,
+        "n_estimators": 400
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4130865663910332
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+ess11-depressive-symptoms-ml
+Copyright 2026 Ehsan Bitaraf, Maryam Jafarpour, Florian Katsch, Adnan Jouned,
+Tanja Stamm and Georg Duftschmid, Center for Medical Data Science,
+Medical University of Vienna, Austria.
+
+Source code is licensed under the Apache License, Version 2.0 (see LICENSE).
+Documentation and aggregate results in docs/ and results/ are licensed under
+the Creative Commons Attribution 4.0 International License (see LICENSE-docs).
+
+This repository contains no European Social Survey (ESS) microdata. ESS Round 11
+data are provided by ESS ERIC under their own conditions of use.
+
+TabPFN model weights (TabPFN-3.5) are not included. They are licensed by
+Prior Labs GmbH under a separate non-commercial license and are downloaded by
+each user after accepting that license.

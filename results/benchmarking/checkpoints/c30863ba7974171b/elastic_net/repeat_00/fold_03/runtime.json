@@ -1,0 +1,6 @@
+{
+  "actual_train_rows": 38594,
+  "encoded_features": 137,
+  "final_fit_predict_seconds": 18.222595248371363,
+  "wall_seconds": 2233.1829798566177
+}

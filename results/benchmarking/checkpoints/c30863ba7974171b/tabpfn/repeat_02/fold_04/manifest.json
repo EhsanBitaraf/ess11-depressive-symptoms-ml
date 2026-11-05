@@ -1,0 +1,14 @@
+{
+  "actual_train_rows": 10000,
+  "best_params": {},
+  "d16_sha256": "14a87748dad45c201eed15c8eecaa00bb5d5ae95f8e2e34b5053ef5f021835b1",
+  "identity": "c30863ba7974171b",
+  "model": "tabpfn",
+  "n_test": 9648,
+  "outer_fold": 4,
+  "prediction_sha256": "e8647ec7d69dded8cd871b37f39384846f0c58f1e71241941b39881dbe035340",
+  "repeat": 2,
+  "state": "COMPLETE",
+  "tabpfn_strategy": "B_subsample_ensemble",
+  "trained_rows": 38594
+}

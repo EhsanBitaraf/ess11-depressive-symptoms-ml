@@ -1,0 +1,30 @@
+rule,status,tested,asked_n,unasked_n,violations,unasked_substantive_n,asked_not_applicable_n,reason,flag_n,flag_with_substantive_n,none_with_substantive_n,none_with_flag_n,na_code_6_n,substantive_dependent_n,by_country_mode
+hlpfmly -> hlpfmhr,REVIEW,50116,15316.0,34800.0,3.0,3.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+hltprca -> cancfre,REVIEW,50116,3528.0,46588.0,1.0,1.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtrnu,REVIEW,50116,42367.0,7749.0,6.0,6.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtrnp,PASS,50116,7540.0,42576.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtrnt,PASS,50116,7540.0,42576.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtroc,PASS,50116,7540.0,42576.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtrnl,PASS,50116,7540.0,42576.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtrwl,PASS,50116,7540.0,42576.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtrnaa,PASS,50116,7540.0,42576.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+medtrun -> medtroth,PASS,50116,7540.0,42576.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+respc19a -> symtc19,REVIEW,50116,31740.0,18376.0,5.0,5.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+symtc19 -> symtnc19,REVIEW,50116,10637.0,39479.0,7.0,7.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+alcfreq -> alcwkdy,PASS,50116,34166.0,15950.0,0.0,0.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+alcfreq -> alcwknd,REVIEW,50116,34166.0,15950.0,1.0,1.0,0.0,Codes and allowed routing sets must be confirmed against the source questionnaire; PASS is only an observed-data consistency check,,,,,,,
+dshlt multiresponse flags,REVIEW,50116,,,11.0,,,Explicit item list; hltprca excluded; 0/1 flags and none-of-above checked independently,306.0,2.0,8.0,1.0,,,
+hltpr multiresponse flags,REVIEW,50116,,,4.0,,,Explicit item list; hltprca excluded; 0/1 flags and none-of-above checked independently,827.0,0.0,3.0,1.0,,,
+jbexe multiresponse flags,REVIEW,50116,,,7.0,,,Explicit item list; hltprca excluded; 0/1 flags and none-of-above checked independently,5387.0,0.0,7.0,0.0,,,
+jbexp multiresponse flags,REVIEW,50116,,,29.0,,,Explicit item list; hltprca excluded; 0/1 flags and none-of-above checked independently,5370.0,23.0,3.0,3.0,,,
+medtr multiresponse flags,REVIEW,50116,,,1.0,,,Explicit item list; hltprca excluded; 0/1 flags and none-of-above checked independently,42687.0,1.0,0.0,0.0,,,
+pacc multiresponse flags,REVIEW,50116,,,4.0,,,Explicit item list; hltprca excluded; 0/1 flags and none-of-above checked independently,982.0,0.0,4.0,0.0,,,
+trhlt multiresponse flags,REVIEW,50116,,,40.0,,,Explicit item list; hltprca excluded; 0/1 flags and none-of-above checked independently,657.0,4.0,16.0,20.0,,,
+chldhhe structural NA,REVIEW,50116,,,,,,Code 6 needs household grid F4 to derive analytic variable; count is NOT a contradiction,,,,,16151.0,,
+emplrel structural NA,REVIEW,50116,,,,,,Code 6 needs paid employment history to derive analytic variable; count is NOT a contradiction,,,,,4913.0,,
+alcfreq filter_nan -> alcwkdy,REVIEW,28,,,,,,Unknown filter with substantive dependent is retained for recoding; not a confirmed routing violation,,,,,,0.0,See audit_summary routing evidence
+alcfreq filter_77_88_99 -> alcwkdy,REVIEW,333,,,,,,Unknown filter with substantive dependent is retained for recoding; not a confirmed routing violation,,,,,,136.0,See audit_summary routing evidence
+alcfreq filter_nan -> alcwknd,REVIEW,28,,,,,,Unknown filter with substantive dependent is retained for recoding; not a confirmed routing violation,,,,,,0.0,See audit_summary routing evidence
+alcfreq filter_77_88_99 -> alcwknd,REVIEW,333,,,,,,Unknown filter with substantive dependent is retained for recoding; not a confirmed routing violation,,,,,,130.0,See audit_summary routing evidence
+alcfreq filter_nan -> alcbnge,REVIEW,28,,,,,,Unknown filter with substantive dependent is retained for recoding; not a confirmed routing violation,,,,,,8.0,See audit_summary routing evidence
+alcfreq filter_77_88_99 -> alcbnge,REVIEW,333,,,,,,Unknown filter with substantive dependent is retained for recoding; not a confirmed routing violation,,,,,,199.0,See audit_summary routing evidence

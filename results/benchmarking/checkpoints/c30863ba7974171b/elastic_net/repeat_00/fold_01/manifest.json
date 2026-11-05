@@ -1,0 +1,15 @@
+{
+  "actual_train_rows": 38593,
+  "best_params": {
+    "C": 0.055873007521023886,
+    "l1_ratio": 0.3778599214112694
+  },
+  "identity": "c30863ba7974171b",
+  "model": "elastic_net",
+  "n_test": 9649,
+  "outer_fold": 1,
+  "prediction_sha256": "88b579ad69229057429aaf454b291b0f36b21fe19a5f74bece0fe0fdb317c4de",
+  "repeat": 0,
+  "state": "COMPLETE",
+  "trained_rows": 38593
+}

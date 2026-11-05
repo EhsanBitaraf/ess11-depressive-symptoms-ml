@@ -1,0 +1,72 @@
+# D16 - TabPFN configuration (DRAFT, not yet approved).
+# Must be approved and frozen BEFORE the pilot run and before any test-fold
+# performance is observed. The SHA-256 of this file is part of the run identity.
+status: approved                    # draft -> approved (with date) before pilot
+decision: D16
+protocol_version: "0.6"
+
+software:
+  tabpfn_version: "9.2.0"        # must equal the installed version; run refuses otherwise
+  torch_version: "2.14.1+cpu"
+  model_weights: default         # default pretrained classifier of this version
+  settings: default              # protocol: default or documented settings, no tuning
+  non_default_settings:
+    TABPFN_ALLOW_CPU_LARGE_DATASET: "1" # performance guard only; pretraining checks remain active
+    ignore_pretraining_limits: false
+
+documented_limits:               # fill from the official documentation of 9.2.0
+  max_training_samples: 10000    # installed InferenceConfig; enforced without bypass
+  max_features: 500             # installed InferenceConfig; checked after preprocessing
+  source: "Installed TabPFN 9.2.0 inference_config.py and validation.py, verified 2026-10-16"
+  max_cpu_samples_default: 1000 # performance guard overridden via environment only
+
+hardware:                        # from hardware.txt, 2026-10-14
+  machine: "Intel Core i9-14900K, 24 cores / 32 threads, 31 GiB RAM, no CUDA GPU"
+  device: cpu
+  torch_threads: 24
+  gpu_used: false
+
+thresholds:                      # per outer-fold fit + predict, measured in the pilot
+  max_wall_hours_per_outer_fold: 2.0     # 15 outer folds -> at most about 30 h in total
+  max_peak_rss_gb: 20.0                  # resident memory of the TabPFN process
+  swap_allowed: false                    # any swap use during the pilot counts as exceeding memory
+
+# Strategy is chosen by the pilot in this fixed order; the first branch that
+# satisfies all thresholds (and the documented limits) is used for all folds.
+strategy_order: [A_full, B_subsample_ensemble, C_single_subsample, D_small_subsample]
+selected_strategy: B_subsample_ensemble
+strategies:
+  A_full:
+    description: "Full outer training fold (about 38,600 respondents)"
+  B_subsample_ensemble:
+    n_per_subset: 10000          # or max_training_samples if smaller
+    n_subsets: 4                 # predictions averaged on the probability scale
+  C_single_subsample:
+    n_per_subset: 10000
+    n_subsets: 1
+  D_small_subsample:
+    n_per_subset: 5000
+    n_subsets: 1
+subsampling:
+  stratify_by: [cntry, d_eds9]   # country x primary outcome, proportional allocation
+  without_replacement: true
+  seed_rule: "base_seed + 1000*repeat + 100*outer_fold + subset"   # reproducible on resume
+  base_seed: 20261014
+
+prediction:
+  batch_size: 2000               # test rows predicted in batches to cap memory
+
+pilot:
+  repeat: 1
+  outer_fold: 1
+  fit_on: outer training fold (strategy under test)
+  predict_on: "random sample of the TRAINING fold of the same size as the test fold"
+  # No test-fold rows are predicted, no metric is computed, no prediction is stored.
+  record: [wall_seconds_fit, wall_seconds_predict, peak_rss_gb, swap_used_gb, threads, strategy]
+  output: results/benchmarking/runtime/tabpfn_pilot.json
+
+weighted_training: excluded      # no sample_weight in fit; excluded from SA2 and SB4 (protocol)
+reporting: >-
+  If a strategy other than A_full is used, TabPFN is trained on different data from the other
+  algorithms; this is stated as a footnote to the TabPFN row of the main results table and in
+  the limitations.

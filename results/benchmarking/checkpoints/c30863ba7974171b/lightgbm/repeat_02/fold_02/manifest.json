@@ -1,0 +1,16 @@
+{
+  "actual_train_rows": 38594,
+  "best_params": {
+    "learning_rate": 0.024470679620005334,
+    "n_estimators": 550,
+    "num_leaves": 30
+  },
+  "identity": "c30863ba7974171b",
+  "model": "lightgbm",
+  "n_test": 9648,
+  "outer_fold": 2,
+  "prediction_sha256": "2e97b6c88dc84358997cbe59d0630a2afe45c9c46bf9fc79bf64eaf08b9aa459",
+  "repeat": 2,
+  "state": "COMPLETE",
+  "trained_rows": 38594
+}

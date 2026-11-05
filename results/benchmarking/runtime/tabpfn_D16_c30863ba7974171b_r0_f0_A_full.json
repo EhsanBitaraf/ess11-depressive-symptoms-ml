@@ -1,0 +1,15 @@
+{
+  "benchmark_config_sha256": "8affe47da79a4c49139254245370faa7c19fc2cf8c5483de31ed703bea1dd355",
+  "d16_config_sha256": "bcb0f04614b8b39c0afaa7fe4235ffc7d8ea5cdcbd43dbbd07dbff7ae73b4bf7",
+  "exit_code": 0,
+  "passed": false,
+  "peak_rss_gb": 0.7213,
+  "peak_swap_gb": 0.0,
+  "pilot_only": true,
+  "reason": "pretraining_limit_38593_exceeds_10000",
+  "resource_limit_exceeded": false,
+  "run_id": "c30863ba7974171b",
+  "strategy": "A_full",
+  "timed_out": false,
+  "wall_seconds_observed": 2.276381665000031
+}

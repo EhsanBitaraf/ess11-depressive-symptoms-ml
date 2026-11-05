@@ -1,0 +1,509 @@
+{
+  "best_params": {
+    "alpha": 0.08829452824957168,
+    "lr": 0.0007153814730096484,
+    "width": 64
+  },
+  "trials": [
+    {
+      "number": 0,
+      "params": {
+        "alpha": 1.0772068259821745e-05,
+        "lr": 0.002773333231091566,
+        "width": 128
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42384845898492823
+    },
+    {
+      "number": 1,
+      "params": {
+        "alpha": 0.00016871904526728169,
+        "lr": 0.001411463194222053,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4194983715847203
+    },
+    {
+      "number": 2,
+      "params": {
+        "alpha": 9.686843834319128e-05,
+        "lr": 0.0094688752706829,
+        "width": 128
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42039646690827603
+    },
+    {
+      "number": 3,
+      "params": {
+        "alpha": 6.559430968181961e-05,
+        "lr": 0.001409706988265546,
+        "width": 32
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4171184398852443
+    },
+    {
+      "number": 4,
+      "params": {
+        "alpha": 4.673325664497638e-05,
+        "lr": 0.00136596483117333,
+        "width": 32
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4179492621610086
+    },
+    {
+      "number": 5,
+      "params": {
+        "alpha": 2.0872877655980694e-05,
+        "lr": 0.0003081361571252649,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.415782636751812
+    },
+    {
+      "number": 6,
+      "params": {
+        "alpha": 6.267597221237145e-05,
+        "lr": 0.00030576830068508907,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41575770445344956
+    },
+    {
+      "number": 7,
+      "params": {
+        "alpha": 0.006891206209341661,
+        "lr": 0.0024364280285060777,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42743789544958494
+    },
+    {
+      "number": 8,
+      "params": {
+        "alpha": 0.0008933967423175208,
+        "lr": 0.00453957650976206,
+        "width": 128
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41689967191770644
+    },
+    {
+      "number": 9,
+      "params": {
+        "alpha": 0.03424892766333234,
+        "lr": 0.00017933381812814279,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.415429793643213
+    },
+    {
+      "number": 10,
+      "params": {
+        "alpha": 0.0004978881538979749,
+        "lr": 0.00011358980009222218,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41581963097464353
+    },
+    {
+      "number": 11,
+      "params": {
+        "alpha": 0.03941240321129261,
+        "lr": 0.00017971241565197327,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41537027834205137
+    },
+    {
+      "number": 12,
+      "params": {
+        "alpha": 0.0816252323005744,
+        "lr": 0.00017017064276533302,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4151544338309514
+    },
+    {
+      "number": 13,
+      "params": {
+        "alpha": 0.08829452824957168,
+        "lr": 0.0007153814730096484,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4136730371359912
+    },
+    {
+      "number": 14,
+      "params": {
+        "alpha": 0.03523218166914848,
+        "lr": 0.0008333653055526421,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4159669348990322
+    },
+    {
+      "number": 15,
+      "params": {
+        "alpha": 0.0030370700841122387,
+        "lr": 0.0006254855879974285,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4182261781909187
+    },
+    {
+      "number": 16,
+      "params": {
+        "alpha": 0.07279005856975623,
+        "lr": 0.0007246870654726632,
+        "width": 128
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41820085458907935
+    },
+    {
+      "number": 17,
+      "params": {
+        "alpha": 0.0033301373330272906,
+        "lr": 0.00016225979253917206,
+        "width": 32
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4164073415901015
+    },
+    {
+      "number": 18,
+      "params": {
+        "alpha": 0.018837558527496835,
+        "lr": 0.004124814746387699,
+        "width": 32
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41766403567615074
+    },
+    {
+      "number": 19,
+      "params": {
+        "alpha": 0.09575732549506764,
+        "lr": 0.0004067103697062914,
+        "width": 32
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41545587465263933
+    },
+    {
+      "number": 20,
+      "params": {
+        "alpha": 0.012525441088198743,
+        "lr": 0.0005256101430806747,
+        "width": 128
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41555470739588674
+    },
+    {
+      "number": 21,
+      "params": {
+        "alpha": 0.006161089280939356,
+        "lr": 0.0002650310270282845,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4149176203884141
+    },
+    {
+      "number": 22,
+      "params": {
+        "alpha": 0.010684413090693961,
+        "lr": 0.00033038992599727403,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41604070007694177
+    },
+    {
+      "number": 23,
+      "params": {
+        "alpha": 0.005936606733936185,
+        "lr": 0.0001675436861749541,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4156370045937592
+    },
+    {
+      "number": 24,
+      "params": {
+        "alpha": 0.002494588911854867,
+        "lr": 0.0002763915872992494,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41489662793958687
+    },
+    {
+      "number": 25,
+      "params": {
+        "alpha": 0.0015252091208052833,
+        "lr": 0.0002849783501749712,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4146727322892776
+    },
+    {
+      "number": 26,
+      "params": {
+        "alpha": 0.0006079501206857236,
+        "lr": 0.00030187996963269414,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4156629631999933
+    },
+    {
+      "number": 27,
+      "params": {
+        "alpha": 0.00014411989759272555,
+        "lr": 0.00034047076833758783,
+        "width": 128
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4172835276495542
+    },
+    {
+      "number": 28,
+      "params": {
+        "alpha": 0.0020604089819527506,
+        "lr": 0.00032348599456825505,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4154119965104172
+    },
+    {
+      "number": 29,
+      "params": {
+        "alpha": 0.06262391345888786,
+        "lr": 0.0035170205570159607,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41508775657853825
+    },
+    {
+      "number": 30,
+      "params": {
+        "alpha": 0.08700356331619678,
+        "lr": 0.0012340932751051087,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.415712309358858
+    },
+    {
+      "number": 31,
+      "params": {
+        "alpha": 0.01288192565006464,
+        "lr": 0.0006748752936453295,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.415822109977471
+    },
+    {
+      "number": 32,
+      "params": {
+        "alpha": 0.005416082819645291,
+        "lr": 0.0009755270099473918,
+        "width": 32
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4172242842998332
+    },
+    {
+      "number": 33,
+      "params": {
+        "alpha": 0.00021481923329969775,
+        "lr": 0.0005381693513556956,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.414685992813228
+    },
+    {
+      "number": 34,
+      "params": {
+        "alpha": 0.000142864799533304,
+        "lr": 0.0006720072418058841,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41519461793092355
+    },
+    {
+      "number": 35,
+      "params": {
+        "alpha": 0.0009598562266255951,
+        "lr": 0.000518828733650515,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4152077982148436
+    },
+    {
+      "number": 36,
+      "params": {
+        "alpha": 0.002124396596783587,
+        "lr": 0.001213254805543168,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41713203680392735
+    },
+    {
+      "number": 37,
+      "params": {
+        "alpha": 0.0568405959308864,
+        "lr": 0.0004938244046187484,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4160778740879773
+    },
+    {
+      "number": 38,
+      "params": {
+        "alpha": 3.837812021971345e-05,
+        "lr": 0.00018569430617388085,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4160808531257018
+    },
+    {
+      "number": 39,
+      "params": {
+        "alpha": 0.00043416365865542664,
+        "lr": 0.0008888191686700281,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41474905056528916
+    },
+    {
+      "number": 40,
+      "params": {
+        "alpha": 0.0010540098620813276,
+        "lr": 0.0009371768029100808,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4149858860614124
+    },
+    {
+      "number": 41,
+      "params": {
+        "alpha": 0.00019634473699568192,
+        "lr": 0.001167246173594381,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42200292563418534
+    },
+    {
+      "number": 42,
+      "params": {
+        "alpha": 4.225507446167314e-05,
+        "lr": 0.0005545405652137078,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4174119263880199
+    },
+    {
+      "number": 43,
+      "params": {
+        "alpha": 0.0004322379270150881,
+        "lr": 0.0005385059523406129,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41467380738842713
+    },
+    {
+      "number": 44,
+      "params": {
+        "alpha": 0.00041286679835035996,
+        "lr": 0.000608196524163466,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41517060373469405
+    },
+    {
+      "number": 45,
+      "params": {
+        "alpha": 8.405548648469193e-05,
+        "lr": 0.002139090449060702,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42267438273430596
+    },
+    {
+      "number": 46,
+      "params": {
+        "alpha": 0.0005796669082425508,
+        "lr": 0.0023741309189110795,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42472733929225487
+    },
+    {
+      "number": 47,
+      "params": {
+        "alpha": 0.00032618087509963894,
+        "lr": 0.0004394522624271073,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.41554919606438023
+    },
+    {
+      "number": 48,
+      "params": {
+        "alpha": 0.0002189978398374401,
+        "lr": 0.0002589719756257322,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.4149843676467681
+    },
+    {
+      "number": 49,
+      "params": {
+        "alpha": 0.0007868910784121416,
+        "lr": 0.0014793050198359952,
+        "width": 64
+      },
+      "state": "TrialState.COMPLETE",
+      "value": 0.42048810432177214
+    }
+  ]
+}

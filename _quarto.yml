@@ -1,0 +1,11 @@
+project:
+  type: default
+  execute-dir: project
+format:
+  html:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  freeze: false

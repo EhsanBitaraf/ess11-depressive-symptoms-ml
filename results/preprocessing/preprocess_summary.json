@@ -1,0 +1,66 @@
+{
+  "config": "config/audit.yml",
+  "protocol_version": "0.5",
+  "data_edition": "ESS11 edition 4.2",
+  "raw_file": "data/ESS11e04_2.sav",
+  "raw_sha256": "35809b1883495d8e1cb3ed604f56c2ddf80c2666e9be11332a7d3502d3d631ae",
+  "variable_map_sha256": "ac3351eaefea1f983fa6b780627c896715dd121ee5a703d87c43bf453e9228cc",
+  "derived_variables_sha256": "5bd621f34622e8c034538620751ef9dd61ad128fc8d55cde895f34f22cc0add2",
+  "output_sha256": "14042340284177f4f8ca96e23074b01ba345efc3da06657aa8ff584a09eed21b",
+  "age_min": 18,
+  "cutoffs": [
+    8,
+    9,
+    10
+  ],
+  "primary_cutoff": 9,
+  "records": 50116,
+  "eligible": 48242,
+  "features": 93,
+  "rule_totals": {
+    "R1": {
+      "n_all": 23,
+      "n_eligible": 23
+    },
+    "R2": {
+      "n_all": 584,
+      "n_eligible": 509
+    },
+    "R3": {
+      "n_all": 131,
+      "n_eligible": 119
+    },
+    "check": {
+      "n_all": 349,
+      "n_eligible": 268
+    },
+    "flag": {
+      "n_all": 4327,
+      "n_eligible": 3729
+    },
+    "implausible": {
+      "n_all": 9,
+      "n_eligible": 9
+    },
+    "missing": {
+      "n_all": 3282,
+      "n_eligible": 2913
+    },
+    "nonordinal_code": {
+      "n_all": 507,
+      "n_eligible": 469
+    },
+    "not_applicable": {
+      "n_all": 52441,
+      "n_eligible": 48963
+    },
+    "outcome": {
+      "n_all": 881,
+      "n_eligible": 836
+    },
+    "structural": {
+      "n_all": 81445,
+      "n_eligible": 77195
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "actual_train_rows": 38593,
+  "best_params": {
+    "depth": 8,
+    "learning_rate": 0.03394968488139558,
+    "n_estimators": 650
+  },
+  "identity": "c30863ba7974171b",
+  "model": "catboost",
+  "n_test": 9649,
+  "outer_fold": 0,
+  "prediction_sha256": "95d70e6e5dcb0640a669efb6734a7e2793c447ad2367914496cd809fa083d6e0",
+  "repeat": 1,
+  "state": "COMPLETE",
+  "trained_rows": 38593
+}

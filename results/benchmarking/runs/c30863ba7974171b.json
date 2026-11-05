@@ -1,0 +1,40 @@
+{
+  "identity": "c30863ba7974171b",
+  "inputs": {
+    "config": {
+      "analytic_data": "local/analytic_stage1.parquet",
+      "audit_summary": "results/audit/audit_summary.json",
+      "expected_eligible": 48242,
+      "feature_spec": "results/preprocessing/feature_spec.csv",
+      "inner_folds": 3,
+      "n_trials": 50,
+      "outer_folds": 5,
+      "predictor_set": "S-3",
+      "protocol_version": "0.5",
+      "repeats": 3,
+      "results_dir": "results/benchmarking",
+      "seed": 20261014,
+      "source_file": "data/ESS11e04_2.sav",
+      "stop_on_error": true,
+      "tabpfn_max_features": 10000,
+      "tabpfn_max_train_rows": null,
+      "weighted_training": false
+    },
+    "inputs": {
+      "audit": "21014d9424f152f1295953184ec7631ace2dacdb6edfdd614c02a5be2a85e6ac",
+      "data": "14042340284177f4f8ca96e23074b01ba345efc3da06657aa8ff584a09eed21b",
+      "feature_spec": "f24be6c656b961e4d79cb64f9e7b849a90f74de9ce999bce8c211bc59163b684"
+    }
+  },
+  "models": [
+    "logistic",
+    "elastic_net",
+    "random_forest",
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "mlp",
+    "tabpfn"
+  ],
+  "status": "READY"
+}
